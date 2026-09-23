@@ -28,3 +28,203 @@
   .legal-main { padding-top: 64px; }
   .legal-content { font-size: 15px; }
 }
+
+
+/* BLUE PRO V2 — rodapé oficial da HOME aplicado somente às páginas legais. */
+.legal-page .footer{
+  padding:64px 0 32px;
+  background:#01132b;
+  border-top:1px solid #1f2937;
+  color:#fff;
+  font-family:"Open Sans",Arial,sans-serif;
+}
+.legal-page .footer>.container{
+  width:min(1180px,calc(100% - 32px));
+  max-width:none;
+  margin-inline:auto;
+  padding-inline:0;
+}
+.legal-page .footer .footer-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:32px;
+  margin-bottom:48px;
+}
+.legal-page .footer .footer-grid>div{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+}
+.legal-page .footer h3{
+  margin:0 0 16px;
+  color:#0085ca;
+  font-family:"Open Sans",Arial,sans-serif;
+  font-size:18px;
+  font-weight:700;
+  line-height:1.5;
+  letter-spacing:normal;
+  text-transform:none;
+}
+.legal-page .footer p,
+.legal-page .footer a{
+  color:#9ca3af;
+  font-size:14px;
+  line-height:1.5;
+}
+.legal-page .footer a{
+  overflow-wrap:normal;
+}
+.legal-page .footer .footer-address>p{
+  margin:0;
+  font-size:15.5px;
+  line-height:1.6;
+  letter-spacing:-.012em;
+}
+.legal-page .footer .keep-together{
+  white-space:nowrap;
+}
+.legal-page .footer .footer-brand img{
+  width:auto;
+  max-width:100%;
+  height:48px;
+  margin:0 0 16px;
+  filter:none;
+  object-fit:contain;
+  opacity:.9;
+}
+.legal-page .footer .footer-brand>p{
+  width:100%;
+  max-width:none;
+  margin:0 0 8px;
+  color:#dbe7f4;
+  font-size:15.5px;
+  font-weight:600;
+  line-height:1.45;
+  letter-spacing:-.035em;
+  white-space:nowrap;
+}
+.legal-page .footer .footer-brand>strong{
+  color:#9ca3af;
+  font-size:12px;
+  line-height:1.5;
+}
+.legal-page .footer .social-labels{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:16px;
+}
+.legal-page .footer .social-labels a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:30px;
+  padding:6px 11px;
+  border:1px solid rgba(255,255,255,.04);
+  border-radius:999px;
+  background:#172844;
+  color:#dbe7f4;
+  font-size:12px;
+  font-weight:700;
+  line-height:1;
+}
+.legal-page .footer .social-labels a:hover,
+.legal-page .footer .social-labels a:focus-visible{
+  background:#20395f;
+  color:#fff;
+  transform:translateY(-1px);
+  outline:none;
+}
+.legal-page .footer .footer-contact>p{
+  margin:0;
+}
+.legal-page .footer .footer-label{
+  color:#0085ca;
+  font-weight:600;
+}
+.legal-page .footer .footer-hours{
+  margin-top:20px;
+}
+.legal-page .footer .footer-hours strong{
+  display:block;
+  margin-bottom:8px;
+  color:#6b7280;
+  font-size:12px;
+  line-height:1.5;
+}
+.legal-page .footer .footer-hours p{
+  margin:0;
+  color:#9ca3af;
+  font-size:14px;
+  line-height:1.5;
+}
+.legal-page .footer .footer-bottom{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:12px;
+  margin-top:0;
+  padding:24px 0 0;
+  border-top:1px solid #1f2937;
+  color:#6b7280;
+}
+.legal-page .footer .footer-meta{
+  min-width:0;
+  flex:1 1 auto;
+}
+.legal-page .footer .footer-bottom p{
+  margin:0;
+  color:#6b7280;
+  font-size:13px;
+  line-height:1.5;
+}
+.legal-page .footer .footer-bottom a,
+.legal-page .footer .footer-credit{
+  color:#6b7280;
+  font-size:12px;
+}
+.legal-page .footer .footer-credit{
+  display:block;
+}
+.legal-page .footer .footer-legal{
+  display:flex;
+  flex:0 0 auto;
+  flex-wrap:wrap;
+  gap:14px;
+}
+@media (max-width:767px){
+  .legal-page .footer .footer-brand>p{
+    width:100%;
+    margin-left:0;
+    font-size:14.5px;
+    letter-spacing:-.055em;
+    text-align:left;
+  }
+  .legal-page .footer .keep-together{
+    white-space:normal;
+  }
+}
+@media (max-width:359px){
+  .legal-page .footer .footer-brand>p{
+    font-size:13px;
+    letter-spacing:-.05em;
+  }
+}
+@media (min-width:768px){
+  .legal-page .footer .footer-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .legal-page .footer .footer-bottom{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding-top:32px;
+  }
+}
+@media (min-width:1024px){
+  .legal-page .footer .footer-grid{
+    grid-template-columns:1.35fr .9fr 1fr 1fr;
+  }
+}
